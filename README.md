@@ -19,3 +19,16 @@ gradlew build
 ```
 
 The output `Scheduler.jar` will be located in `build/libs`.
+
+## Running
+
+Gradle 4.9+:
+```
+gradle run --args='data.json'
+```
+
+Gradle older than 4.9:
+
+```
+gradle run -Pdata="['data.json']"
+```

@@ -11,10 +11,34 @@ apply plugin: 'application'
 
 mainClassName = 'Scheduler.Schedule'
 
-dependencies {
-    compile fileTree(dir: 'lib', include: '*.jar')
+repositories {
+    flatDir name: 'libs', dirs: "$projectDir/lib"
 }
+
+dependencies {
+    implementation 'com.google.code.gson:gson:2.2.2'
+    implementation 'joptsimple:jopt-simple:4.4'
+    implementation 'lpsolve:lpsolve55j'
+}
+//
+// task copyLibs(type: Copy) {
+//     into "${buildDir}/libs"
+//     from configurations.runtime
+// }
+//
+// build.dependsOn(copyLibs)
 
 jar {
     baseName = "Scheduler"
+    manifest {
+        mainAttributes("Main-Class": "Scheduler.Schedule")
+    }
+}
+
+// Pre-Gradle 4.9: pass args as 'gradle run -Pdata="['data.json']"'
+// args = [project.property('args')]
+run {
+    if (project.hasProperty("data")) {
+        args Eval.me(data)
+    }
 }
