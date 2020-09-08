@@ -1,13 +1,20 @@
+# Java
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
 
-# Eclipse 
+# Eclipse
 .classpath
 .project
+
+# Gradle
+.gradle/
+**/build/
+!src/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
 
 # swp
 .*.swp
@@ -24,4 +31,3 @@
 *.synctex.gz
 *.toc
 *.vrb
-/bin

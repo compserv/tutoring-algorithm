@@ -1,4 +1,4 @@
-package MaxWeightMatching;
+package Scheduler.MaxWeightMatching;
 
 public class Pair {
   public int to;

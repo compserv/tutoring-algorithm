@@ -1,7 +1,7 @@
 /**
  * Models the problem as a linear program and solves using lp_solve's ILP.
  */
-package LPSolve;
+package Scheduler;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,10 +10,7 @@ import java.lang.Math;
 
 import lpsolve.LpSolve;
 import lpsolve.LpSolveException;
-import Items.Data;
-import Items.Slot;
-import Items.Tutor;
-import Weighting.Weighting;
+import Scheduler.Weighting.Weighting;
 
 public class IntegerLP {
 

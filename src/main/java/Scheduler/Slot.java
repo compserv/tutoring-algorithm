@@ -2,7 +2,7 @@
  * Stores data about the preferences of an individual office hour slot.
  */
 
-package Items;
+package Scheduler;
 
 import java.util.ArrayList;
 

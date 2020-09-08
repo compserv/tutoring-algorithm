@@ -1,14 +1,13 @@
-package Swapper;
+package Scheduler.Swapper;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
-import Items.Data;
-import Items.Slot;
-import Items.Tutor;
-import Weighting.Evaluator;
-import Weighting.Weighting;
+import Scheduler.Data;
+import Scheduler.Slot;
+import Scheduler.Tutor;
+import Scheduler.Weighting.Evaluator;
+import Scheduler.Weighting.Weighting;
 
 public class Swapper {
   public static Random rand;

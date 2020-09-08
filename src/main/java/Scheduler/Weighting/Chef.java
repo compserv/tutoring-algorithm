@@ -2,12 +2,12 @@
  * A weight function. The source of many delicious smells.
  */
 
-package Weighting;
+package Scheduler.Weighting;
 
 import java.util.HashMap;
 
-import Items.Slot;
-import Items.Tutor;
+import Scheduler.Slot;
+import Scheduler.Tutor;
 
 public class Chef implements Weighting {
 

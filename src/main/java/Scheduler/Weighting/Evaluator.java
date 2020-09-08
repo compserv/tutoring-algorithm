@@ -2,13 +2,13 @@
  * An evaluator.
  */
 
-package Weighting;
+package Scheduler.Weighting;
 
 import java.util.ArrayList;
 
-import Items.Data;
-import Items.Slot;
-import Items.Tutor;
+import Scheduler.Data;
+import Scheduler.Slot;
+import Scheduler.Tutor;
 
 public class Evaluator {
   public static final double PENALTY = 10000000;

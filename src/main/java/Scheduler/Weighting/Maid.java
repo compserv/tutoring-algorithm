@@ -2,10 +2,10 @@
  * A weight function. Loyal and mysterious.
  */
 
-package Weighting;
+package Scheduler.Weighting;
 
-import Items.Slot;
-import Items.Tutor;
+import Scheduler.Slot;
+import Scheduler.Tutor;
 
 public class Maid implements Weighting {
 

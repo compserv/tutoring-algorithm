@@ -4,7 +4,7 @@
  * Populate these classes using the Gson library
  */
 
-package Items;
+package Scheduler;
 
 import java.util.ArrayList;
 import java.util.Arrays;

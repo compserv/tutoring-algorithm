@@ -3,7 +3,7 @@
  * slots, but not necessarily a perfect matching (allow asymmetry and multiple assignments)
  */
 
-package Items;
+package Scheduler;
 
 public class Assignment {
 

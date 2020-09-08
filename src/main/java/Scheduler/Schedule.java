@@ -1,11 +1,11 @@
 /**
  * Schedule class. Main scheduling class. Loads slot and tutor data from JSON and performs matching
  * based on additional options.
- * 
+ *
  * usage: Schedule [jsonfile]
  */
 
-package Schedule;
+package Scheduler;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -18,16 +18,16 @@ import java.util.List;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import Items.Data;
-import LPSolve.IntegerLP;
-import MaxWeightMatching.Matcher;
-import Swapper.Swapper;
-import Weighting.Butler;
-import Weighting.Chef;
-import Weighting.Evaluator;
-import Weighting.Gardener;
-import Weighting.Waiter;
-import Weighting.Weighting;
+import Scheduler.Data;
+import Scheduler.IntegerLP;
+import Scheduler.MaxWeightMatching.Matcher;
+import Scheduler.Swapper.Swapper;
+import Scheduler.Weighting.Butler;
+import Scheduler.Weighting.Chef;
+import Scheduler.Weighting.Evaluator;
+import Scheduler.Weighting.Gardener;
+import Scheduler.Weighting.Waiter;
+import Scheduler.Weighting.Weighting;
 
 import com.google.gson.Gson;
 

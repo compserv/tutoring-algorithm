@@ -1,10 +1,6 @@
-// each value is described by "<JSON TYPE>:<DESCRIPTION>"
-
 {
     // array of strings which denote to classes
     "courseNames":["string: indices correspond to 'courses' arrays"],
-
-    // array of tutor objects
     "tutors":
     [
         {
@@ -23,8 +19,6 @@
         "numAssignments":"int in [1,2]; number of tutoring slots to assign this tutor"
         }
     ],
-    
-    // array of slot objects
     "slots":
     [
         {

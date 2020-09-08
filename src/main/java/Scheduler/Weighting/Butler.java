@@ -2,10 +2,10 @@
  * A weight function. Loyal and mysterious. Incorporates time and course preference.
  */
 
-package Weighting;
+package Scheduler.Weighting;
 
-import Items.Slot;
-import Items.Tutor;
+import Scheduler.Slot;
+import Scheduler.Tutor;
 
 public class Butler implements Weighting {
 

@@ -1,12 +1,12 @@
-package MaxWeightMatching;
+package Scheduler.MaxWeightMatching;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-import Items.Data;
-import Items.Slot;
-import Items.Tutor;
-import Weighting.Weighting;
+import Scheduler.Data;
+import Scheduler.Slot;
+import Scheduler.Tutor;
+import Scheduler.Weighting.Weighting;
 
 public class Matcher {
   private static Tutor[] t;
@@ -37,7 +37,7 @@ public class Matcher {
     for (int r = 0; r < 2; r++) {
       assign();
     }
-    
+
     // one more time to make sure all tutors have enough slots
     // this will allow some slots to have more than one person
     // however now all slots can be used
@@ -213,7 +213,7 @@ public class Matcher {
 
   /**
    * Switches path parities Running time: O(N), N is number of nodes
-   * 
+   *
    * @param end : the end of the path
    */
   private static void augmentPath(int end) {

@@ -2,7 +2,7 @@
  * Stores data about the preferences of an individual tutor.
  */
 
-package Items;
+package Scheduler;
 
 import java.util.ArrayList;
 

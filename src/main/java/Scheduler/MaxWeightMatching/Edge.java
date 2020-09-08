@@ -1,4 +1,4 @@
-package MaxWeightMatching;
+package Scheduler.MaxWeightMatching;
 
 public class Edge implements Comparable<Edge> {
   public int from, to;
