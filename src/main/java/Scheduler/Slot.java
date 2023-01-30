@@ -40,7 +40,8 @@ public class Slot {
 
   public boolean adjacent(Slot s) {
     for (int i = 0; i < adjacentSlots.length; i++)
-      if (adjacentSlots[i].equals(s))
+      // if (adjacentSlots[i].equals(s))
+      if (s.equals(adjacentSlots[i]))
         return true;
     return false;
   }
