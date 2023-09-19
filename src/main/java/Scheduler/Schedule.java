@@ -156,6 +156,16 @@ public class Schedule {
         // System.out.println(assign);
         // System.out.println(stdmin + " " + maxhap);
         // System.out.println (maxhap - s);
+
+        // Default to output.json
+        File outputFile = new File("output.json");
+        try {
+            PrintWriter fout = new PrintWriter(outputFile);
+            fout.println(dat.formattedAssignments());
+            fout.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
       }
       System.out.println("DONE");
       System.out.println(dat.readableFormattedAssignments());
