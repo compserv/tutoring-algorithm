@@ -41,7 +41,7 @@ Modified by Artem:
 Running with the new rooms requires additional input/output mapping. 
 
 1. Download the scheduler params from https://hkn.eecs.berkeley.edu/admin/tutor/params_for_scheduler?which=officer into a file in this directory named `base_params.json`
-2. Inside `process_input.py` modify start and end hours inside of python file as well as people doing review sessions and execs. To add people just do `execs = ["First Last", ...]` where First and Last name are from hkn.mu website, also do this for other variables, leaving them empty is fine.
+2. Inside `process_input.py` modify start and end hours(these are tutoring hours, they must not include prodev hours) inside of python file as well as people doing review sessions and execs. To add people just do `execs = ["First Last", ...]` where First and Last name are from hkn.mu website, also do this for other variables, leaving them empty is fine.
 3. Run `python process_input.py`.
 4. Use the output `scheduler_input.json` file as input to the scheduler (see the Java instructions above)
 5. Rename the scheduler output file to `output.json`
