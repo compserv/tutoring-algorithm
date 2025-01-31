@@ -1,7 +1,7 @@
 import json
 
 
-INPUT_FNAME = "input.json"
+INPUT_FNAME = "scheduler_input.json"
 OUTPUT_FNAME = "output.json"
 PROCESSED_OUTPUT_FNAME = "processed_output.json"
 
